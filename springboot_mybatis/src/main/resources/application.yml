@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springboot_test?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: springboot_mybatis
+
+
+mybatis:
+  configuration:
+    #配置实体类驼峰命名规则
+    map-underscore-to-camel-case: true
+    #配置sql打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+person:
+  name: lili
+  age: 20
+  address:
+    - beijing
+    - shanghai
+    - wuhan

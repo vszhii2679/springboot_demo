@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>variable</title>
+</head>
+<body>
+<!--从model中取值-->
+<p th:text="${name}"></p>
+<br/>
+-----------------------------
+<!--form表单绑定 /thymeleaf/getFormDate -->
+<form th:action="@{/thymeleaf/getFormData}" method="get">
+    <label>文本输入框</label><input th:type="text" th:name="data"><br/>
+    <button type="submit">提交</button>
+</form>
+<br/>
+<p th:text="${str}"></p>
+<br/>
+-----------------------------
+
+
+</body>
+</html>

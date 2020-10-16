@@ -1,0 +1,7 @@
+#redis配置参数
+spring:
+  application:
+    name: springboot_redis
+  redis:
+    host: 127.0.0.1
+    port: 6379

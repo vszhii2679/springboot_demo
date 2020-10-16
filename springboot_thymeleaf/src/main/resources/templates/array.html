@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--取出数组中的数据-->
+<div th:each="name,namestates:${names}">
+    序号：<span th:text="${namestates.count}"></span><!--${namestates.index+1} 也可当序号使用-->
+    姓名：<span th:text="${name}"></span>
+</div>
+<br/>
+-----------------------------
+</body>
+</html>

@@ -1,0 +1,17 @@
+#tomcat的ip+port
+server:
+  port: 80
+  address: 127.0.0.1
+
+#自定义数据
+person:
+  name: lili
+  age: 40
+  address:
+    - beijing
+    - shanghai
+    - guangzhou
+    - shenzhen
+spring:
+  application:
+    name: springboot_quickstart

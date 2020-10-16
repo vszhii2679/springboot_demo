@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--取出map中的数据-->
+<table>
+    <!--第一种展示方式-->
+    <tr th:each="map,mapStates:${dataMap}">
+        <td th:text="${map}"></td>
+    </tr>
+    <!--第二种展示方式-->
+    <tr th:each="map,mapStates:${dataMap}">
+        <td th:text="${map.key}"></td>
+        <td th:text="${map.value}"></td>
+        <br>
+    </tr>
+</table>
+<br/>
+-----------------------------
+</body>
+</html>

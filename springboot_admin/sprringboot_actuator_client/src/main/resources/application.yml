@@ -1,0 +1,9 @@
+#spring:
+#  application:
+#    name: springboot_client
+#  boot:
+#    admin:
+#      client:
+#        url: 127.0.0.1:80
+server:
+  port: 81

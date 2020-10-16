@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: springboot_thymeleaf
+  thymeleaf:
+    cache: false
+
+server:
+  port: 80

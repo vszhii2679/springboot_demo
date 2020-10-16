@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--unless判断-->
+<p>unless判断与if相反，如果unless满足条件则为false</p>
+<span th:unless="${num>20}" th:text="num小于等于20"></span>
+<span th:unless="${num<=20}" th:text="num大于20"></span>
+<br/>
+-----------------------------
+</body>
+</html>

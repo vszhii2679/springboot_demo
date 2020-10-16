@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--取出日期数据-->
+<span th:text="${date}"></span>
+<br>
+<!--对取出的日期格式化-->
+<span th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}"></span>
+<br/>
+-----------------------------
+</body>
+</html>
